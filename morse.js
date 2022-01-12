@@ -1,4 +1,4 @@
-const morseCode = {
+export const morseCode = {
   A: '.-',
   B: '-...',
   C: '-.-.',
@@ -29,12 +29,4 @@ const morseCode = {
   ',': '--..--',
   '?': '..--..',
   ' ': '/',
-}
-
-
-
-class Translator {
-  constructor(morse){
-  this.morse = morse;
-  }
 }

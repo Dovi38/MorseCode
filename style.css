@@ -18,8 +18,7 @@
   margin-top: 10px;
   border: 3px solid rgb(71, 12, 1);
    width: 50%; 
-   height: 100%;
-   
+   height: 100%; 
 }
 .letter {
   border-left: 2px solid rgb(71, 12, 1);
@@ -29,7 +28,6 @@
   font-size: 20px;
   font-weight: bold;
 }
-
 .morse { 
   border-bottom: 2px solid rgb(71, 12, 1);
   padding: 3px;
@@ -38,16 +36,12 @@
   font-weight: 900;
 }
 .translator {
-  border: 2px solid green;
   margin: 10px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  align-items: center;
- 
-  
-  
+  align-items: center; 
 }
 #input-translator,
 #output-translator {
@@ -55,7 +49,6 @@
   border-radius: 10px; 
   font-size: 15px;
   width: 60%;
- 
 }
 .btn-translator {
   display: flex;
@@ -105,5 +98,4 @@ textarea {
 #output-translator {
   width: 100%;
 }
-
 }
