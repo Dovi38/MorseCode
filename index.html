@@ -5,97 +5,95 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Morse translator</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../sass/main.css">
 </head>
 <body>
   <h1 class="header">Morse code translator</h1>
-  <table class="alphabet">
-    <tr class="row">
-      <td class="letter">A</td>
-      <td class="morse">.-</td>
-      <td class="letter">G</td>
-      <td class="morse">--.</td>
-      <td class="letter">M</td>
-      <td class="morse">--</td>
-      <td class="letter">S</td>
-      <td class="morse">...</td>
-      <td class="letter">Y</td>
-      <td class="morse">-.--</td>
+  <table class="table">
+    <tr class="table__row">
+      <td class="table__row-letter">A</td>
+      <td class="table__row-morse">.-</td>
+      <td class="table__row-letter">G</td>
+      <td class="table__row-morse">--.</td>
+      <td class="table__row-letter">M</td>
+      <td class="table__row-morse">--</td>
+      <td class="table__row-letter">S</td>
+      <td class="table__row-morse">...</td>
+      <td class="table__row-letter">Y</td>
+      <td class="table__row-morse">-.--</td>
       </tr>
-      <tr class="row">
-        <td class="letter">B</td>
-        <td class="morse">-...</td>
-        <td class="letter">H</td>
-        <td class="morse">....</td>
-        <td class="letter">N</td>
-        <td class="morse">-.</td>
-        <td class="letter">T</td>
-        <td class="morse">-</td>
-        <td class="letter">Z</td>
-        <td class="morse">--..</td>
+      <tr class="table__row">
+        <td class="table__row-letter">B</td>
+        <td class="table__row-morse">-...</td>
+        <td class="table__row-letter">H</td>
+        <td class="table__row-morse">....</td>
+        <td class="table__row-letter">N</td>
+        <td class="table__row-morse">-.</td>
+        <td class="table__row-letter">T</td>
+        <td class="table__row-morse">-</td>
+        <td class="table__row-letter">Z</td>
+        <td class="table__row-morse">--..</td>
       </tr>
-      <tr class="row">
-        <td class="letter">C</td>
-        <td class="morse">-.-.</td>
-        <td class="letter">I</td>
-        <td class="morse">..</td>
-        <td class="letter">O</td>
-        <td class="morse">---</td>
-        <td class="letter">U</td>
-        <td class="morse">..-</td>
-        <td class="letter"><p>&bull;</p></td>
-        <td class="morse">.-.-.-</td>
+      <tr class="table__row">
+        <td class="table__row-letter">C</td>
+        <td class="table__row-morse">-.-.</td>
+        <td class="table__row-letter">I</td>
+        <td class="table__row-morse">..</td>
+        <td class="table__row-letter">O</td>
+        <td class="table__row-morse">---</td>
+        <td class="table__row-letter">U</td>
+        <td class="table__row-morse">..-</td>
+        <td class="table__row-letter"><p>&bull;</p></td>
+        <td class="table__row-morse">.-.-.-</td>
       </tr>
-      <tr class="row">
-        <td class="letter">D</td>
-        <td class="morse">-..</td>
-        <td class="letter">J</td>
-        <td class="morse">.---</td>
-        <td class="letter">P</td>
-        <td class="morse">.--.</td>
-        <td class="letter">V</td>
-      <td class="morse">...-</td>
-      <td class="letter">I</td>
-        <td class="morse">..</td>
+      <tr class="table__row">
+        <td class="table__row-letter">D</td>
+        <td class="table__row-morse">-..</td>
+        <td class="table__row-letter">J</td>
+        <td class="table__row-morse">.---</td>
+        <td class="table__row-letter">P</td>
+        <td class="table__row-morse">.--.</td>
+        <td class="table__row-letter">V</td>
+        <td class="table__row-morse">...-</td>
+        <td class="table__row-letter">I</td>
+        <td class="table__row-morse">..</td>
       </tr>
-      <tr class="row">
-        <td class="letter">E</td>
-        <td class="morse">.</td>        
-        <td class="letter">K</td>
-        <td class="morse">-.-</td>
-        <td class="letter">Q</td>
-        <td class="morse">--.-</td>
-        <td class="letter">W</td>
-        <td class="morse">.--</td>
-        <td class="letter">?</td>
-        <td class="morse">..--..</td>
+      <tr class="table__row">
+        <td class="table__row-letter">E</td>
+        <td class="table__row-morse">.</td>        
+        <td class="table__row-letter">K</td>
+        <td class="table__row-morse">-.-</td>
+        <td class="table__row-letter">Q</td>
+        <td class="table__row-morse">--.-</td>
+        <td class="table__row-letter">W</td>
+        <td class="table__row-morse">.--</td>
+        <td class="table__row-letter">?</td>
+        <td class="table__row-morse">..--..</td>
       </tr>
-      <tr class="row">
-        <td class="letter">F</td>
-        <td class="morse">..-.</td>
-        <td class="letter">L</td>
-        <td class="morse">.-..</td>
-        <td class="letter">R</td>
-        <td class="morse">.-.</td>
-        <td class="letter">X</td>
-        <td class="morse">-..-</td>
-        <td class="letter">' '</td>
-        <td class="morse">/</td>
+      <tr class="table__row">
+        <td class="table__row-letter">F</td>
+        <td class="table__row-morse">..-.</td>
+        <td class="table__row-letter">L</td>
+        <td class="table__row-morse">.-..</td>
+        <td class="table__row-letter">R</td>
+        <td class="table__row-morse">.-.</td>
+        <td class="table__row-letter">X</td>
+        <td class="table__row-morse">-..-</td>
+        <td class="table__row-letter">' '</td>
+        <td class="table__row-morse">/</td>
       </tr>
       
   </table>
-<form class="translator" onsubmit="event.preventDefault()">
-  
-  <textarea id="input-translator" name="input" rows="7" cols="60" placeholder="Input"></textarea>
+<form class="translator" onsubmit ="event.preventDefault()">
+  <textarea class="translator__input" name="input" rows="7" cols="60" placeholder="Input"></textarea>
 
-  <div class="btn-translator">
-    <button class="btn-convert--translator">Convert</button>
-    <button class="btn-clear--translator">Clear</button>
-    <button class="btn-decode--translator">Decode</button>
+  <div class="translator__btn">
+    <button class="translator__btn-convert">Convert</button>
+    <button class="translator__btn-clear">Clear</button>
+    <button class="translator__btn-decode">Decode</button>
   </div>
 
-  <textarea id="output-translator" name="output" rows="7" cols="60" placeholder="Output"></textarea>
-
+  <textarea class="translator__output" name="output" rows="7" cols="60" placeholder="Output"></textarea>
 </form>
 
   <script src="./script.js" type="module"></script>

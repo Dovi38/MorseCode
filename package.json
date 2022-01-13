@@ -1,0 +1,25 @@
+{
+  "name": "morse-code",
+  "version": "1.0.0",
+  "description": "translator english to morse code",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dovi38/MorseCode.git"
+  },
+  "keywords": [],
+  "author": "Dovi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dovi38/MorseCode/issues"
+  },
+  "homepage": "https://github.com/Dovi38/MorseCode#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "jest": "^27.4.7"
+  }
+}

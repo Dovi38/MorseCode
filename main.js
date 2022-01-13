@@ -16,7 +16,7 @@ export class Translator {
   //take input and split into letters, loop through, compare to object morse.
   convert() {
     const strToConvert = this.textInput.value.toUpperCase().split('');
-    console.log(strToConvert);
+    //console.log(strToConvert);
     let convertedStr = '';
     for(let i = 0; i < strToConvert.length; i++){
       for(let j in this.morseCode) {

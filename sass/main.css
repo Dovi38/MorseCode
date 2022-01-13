@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&family=Shizuru&family=Zen+Antique+Soft&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #3a10ad;
+  color: white;
+}
+
+.header {
+  text-align: center;
+  margin: 20px;
+  color: orange;
+  font-family: "Zen Antique Soft", serif;
+}
+
+.table {
+  margin: auto;
+  margin-top: 10px;
+  border: 3px solid #470c01;
+  width: 50%;
+  height: 100%;
+}
+.table .table__row-letter {
+  border-left: 2px solid #470c01;
+  border-bottom: 2px solid #470c01;
+  padding: 3px;
+  font-family: "work sans";
+  font-size: 20px;
+  font-weight: bold;
+}
+.table .table__row-morse {
+  border-bottom: 2px solid #470c01;
+  padding: 3px;
+  font-family: "work sans";
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.translator {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+.translator .translator__input,
+.translator .translator__output {
+  border: 6px solid brown;
+  border-radius: 10px;
+  font-size: 15px;
+  width: 60%;
+}
+.translator .translator__btn {
+  display: flex;
+}
+.translator__btn-convert, .translator__btn-clear, .translator__btn-decode {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid grey;
+  border-radius: 20px;
+  background-color: orange;
+  color: black;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .table__row-morse {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  /* .translator {
+      flex-direction: column;
+      justify-content: center;
+  } */
+  .table {
+    width: auto;
+  }
+
+  .translator__btn-convert,
+  .translator__btn-clear,
+  .translator__btn-decode {
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .translator__input,
+  .translator__output {
+    width: 100%;
+  }
+}
