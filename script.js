@@ -13,8 +13,8 @@ const translator = new Translator(morseCode, textInput, textOutput);
     translator.convert(); 
   })
   clearBtn.addEventListener('click', () => {
-    translator.clear();
+    translator.clear(textInput.value, textOutput.value);
   })
   decodeBtn.addEventListener('click', () => {
-    translator.decode()
+    translator.decode(textInput.value)
   })

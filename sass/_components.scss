@@ -40,10 +40,10 @@
   }
 .translator__btn {
     display: flex;
-  }
-  &__btn-convert,
-  &__btn-clear,
-  &__btn-decode {
+
+    &--convert,
+  &--clear,
+  &--decode {
     display: inline-block;
     font-size: 20px;
     font-weight: 600;
@@ -54,7 +54,15 @@
     background-color: orange;
     color: black;
    cursor: pointer;
+
+   @media only screen and (max-width: 992px) {
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
    }
+   }
+  }
+  
 }
 
 textarea {
@@ -74,13 +82,13 @@ textarea {
 .table {
   width: auto;
 }
-.translator__btn-convert,
-.translator__btn-clear,
-.translator__btn-decode {
-  font-size: 15px;
-  padding: 5px;
-  margin: 5px;
-}
+// &--convert,
+// &--clear,
+// &--btn-decode {
+//   font-size: 15px;
+//   padding: 5px;
+//   margin: 5px;
+// }
 .translator__input,
 .translator__output {
   width: 100%;

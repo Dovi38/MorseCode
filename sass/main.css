@@ -55,7 +55,7 @@
 .translator .translator__btn {
   display: flex;
 }
-.translator__btn-convert, .translator__btn-clear, .translator__btn-decode {
+.translator .translator__btn--convert, .translator .translator__btn--clear, .translator .translator__btn--decode {
   display: inline-block;
   font-size: 20px;
   font-weight: 600;
@@ -66,6 +66,13 @@
   background-color: orange;
   color: black;
   cursor: pointer;
+}
+@media only screen and (max-width: 992px) {
+  .translator .translator__btn--convert, .translator .translator__btn--clear, .translator .translator__btn--decode {
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+  }
 }
 
 textarea {
@@ -89,16 +96,8 @@ textarea {
     width: auto;
   }
 
-  .translator__btn-convert,
-  .translator__btn-clear,
-  .translator__btn-decode {
-    font-size: 15px;
-    padding: 5px;
-    margin: 5px;
-  }
-
   .translator__input,
-  .translator__output {
+.translator__output {
     width: 100%;
   }
 }
