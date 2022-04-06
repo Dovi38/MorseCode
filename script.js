@@ -1,20 +1,20 @@
-import {Translator} from './main.js';
-import {morseCode} from './morse.js';
+import { Translator } from "./main.js";
+import { morseCode } from "./morse.js";
 
-const convertBtn = document.querySelector('.translator__btn-convert');
-const clearBtn = document.querySelector('.translator__btn-clear');
-const decodeBtn = document.querySelector('.translator__btn-decode');
-const textInput = document.querySelector('.translator__input');
-const textOutput = document.querySelector('.translator__output');
+const convertBtn = document.querySelector(".translator__btn--convert");
+const clearBtn = document.querySelector(".translator__btn--clear");
+const decodeBtn = document.querySelector(".translator__btn--decode");
+const textInput = document.querySelector(".translator__input");
+const textOutput = document.querySelector(".translator__output");
 
 const translator = new Translator(morseCode, textInput, textOutput);
 
-  convertBtn.addEventListener('click', () => {
-    translator.convert(); 
-  })
-  clearBtn.addEventListener('click', () => {
-    translator.clear(textInput.value, textOutput.value);
-  })
-  decodeBtn.addEventListener('click', () => {
-    translator.decode(textInput.value)
-  })
+convertBtn.addEventListener("click", () => {
+  translator.convert(textInput.value, textOutput.innerHTML);
+});
+clearBtn.addEventListener("click", () => {
+  translator.clear(textInput.value, textOutput.value);
+});
+decodeBtn.addEventListener("click", () => {
+  translator.decode(textInput.value);
+});
